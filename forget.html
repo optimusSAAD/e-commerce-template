@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Forget Password?</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="OneTech shop project">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+		<link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+		<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+		<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+		<link rel="stylesheet" type="text/css" href="plugins/jquery-ui-1.12.1.custom/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="styles/shop_styles.css">
+		<link rel="stylesheet" type="text/css" href="styles/shop_responsive.css">
+		<style type="text/css">
+			.tab
+			{
+				margin-top: 12px;
+				margin-left: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="super_container">
+			
+			<!-- Header -->
+			
+			<header class="header">
+				<!-- Top Bar -->
+				<div class="top_bar">
+					<div class="container">
+						<div class="row">
+							<div class="col d-flex flex-row">
+								<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="images/phone.png" alt=""></div>+38 068 005 3570</div>
+								<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="images/mail.png" alt=""></div><a href="mailto:fastsales@gmail.com">fastsales@gmail.com</a></div>
+								<div class="top_bar_content ml-auto">
+									<div class="top_bar_menu">
+										<ul class="standard_dropdown top_bar_dropdown">
+											<li>
+												<a href="#">English<i class="fas fa-chevron-down"></i></a>
+												<ul>
+													<li><a href="#">Italian</a></li>
+													<li><a href="#">Spanish</a></li>
+													<li><a href="#">Japanese</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">$ US dollar<i class="fas fa-chevron-down"></i></a>
+												<ul>
+													<li><a href="#">EUR Euro</a></li>
+													<li><a href="#">GBP British Pound</a></li>
+													<li><a href="#">JPY Japanese Yen</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+									<div class="top_bar_user">
+										<div class="user_icon"><img src="images/user.svg" alt=""></div>
+										<div><a href="#">Register</a></div>
+										<div><a href="#">Sign in</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Header Main -->
+				<div class="header_main">
+					<div class="container">
+						<div class="row">
+							<!-- Logo -->
+							<div class="col-lg-2 col-sm-3 col-3 order-1">
+								<div class="logo_container">
+									<div class="logo"><a href="#">OneTech</a></div>
+								</div>
+							</div>
+							<!-- Search -->
+							<div class="col-lg-6 col-12 order-lg-2 order-3 text-lg-left text-right">
+								<div class="header_search">
+									<div class="header_search_content">
+										<div class="header_search_form_container">
+											<form action="#" class="header_search_form clearfix">
+												<input type="search" required="required" class="header_search_input" placeholder="Search for products...">
+												<div class="custom_dropdown">
+													<div class="custom_dropdown_list">
+														<span class="custom_dropdown_placeholder clc">All Categories</span>
+														<i class="fas fa-chevron-down"></i>
+														<ul class="custom_list clc">
+															<li><a class="clc" href="#">All Categories</a></li>
+															<li><a class="clc" href="#">Computers</a></li>
+															<li><a class="clc" href="#">Laptops</a></li>
+															<li><a class="clc" href="#">Cameras</a></li>
+															<li><a class="clc" href="#">Hardware</a></li>
+															<li><a class="clc" href="#">Smartphones</a></li>
+														</ul>
+													</div>
+												</div>
+												<button type="submit" class="header_search_button trans_300" value="Submit"><img src="images/search.png" alt=""></button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Wishlist -->
+							<div class="col-lg-4 col-9 order-lg-3 order-2 text-lg-left text-right">
+								<div class="wishlist_cart d-flex flex-row align-items-center justify-content-end">
+									<div class="wishlist d-flex flex-row align-items-center justify-content-end">
+										<div class="wishlist_icon"><img src="images/heart.png" alt=""></div>
+										<div class="wishlist_content">
+											<div class="wishlist_text"><a href="#">Wishlist</a></div>
+											<div class="wishlist_count">115</div>
+										</div>
+									</div>
+									<!-- Cart -->
+									<div class="cart">
+										<div class="cart_container d-flex flex-row align-items-center justify-content-end">
+											<div class="cart_icon">
+												<img src="images/cart.png" alt="">
+												<div class="cart_count"><span>10</span></div>
+											</div>
+											<div class="cart_content">
+												<div class="cart_text"><a href="#">Cart</a></div>
+												<div class="cart_price">$85</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Main Navigation -->
+				<nav class="main_nav" id="navbar">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								
+								<div class="main_nav_content d-flex flex-row">
+									<!-- Categories Menu -->
+									<div class="cat_menu_container">
+										<div class="cat_menu_title d-flex flex-row align-items-center justify-content-start">
+											<div class="cat_burger"><span></span><span></span><span></span></div>
+											<div class="cat_menu_text">categories</div>
+										</div>
+										<ul class="cat_menu">
+											<li class="hassubs">
+												<a href="#">New Arrival<i class="fas fa-chevron-right"></i></a>
+												<ul>
+													<li class="hassubs">
+														<a href="#">Pets<i class="fas fa-chevron-right"></i></a>
+														<ul>
+															<li><a href="#">Cat<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Dog<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Birds<i class="fas fa-chevron-right"></i></a></li>
+														</ul>
+													</li>
+													<li class="hassubs">
+														<a href="#">Laptop<i class="fas fa-chevron-right"></i></a>
+														<ul>
+															<li><a href="#">Asus<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Dell<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Prediator<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Msi<i class="fas fa-chevron-right"></i></a></li>
+														</ul>
+													</li>
+													<li class="hassubs">
+														<a href="#">Gaming Consoles<i class="fas fa-chevron-right"></i></a>
+														<ul>
+															<li><a href="#">Playstatio<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Playstations Game<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Xbox's Game<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Gaming Controller<i class="fas fa-chevron-right"></i></a></li>
+														</ul>
+													</li>
+													<li class="hassubs">
+														<a href="#">Virtual Reality</a>
+													</li>
+												</ul>
+											</li>
+											<li class="hassubs">
+												<a href="#">Hardware<i class="fas fa-chevron-right"></i></a>
+												<ul>
+													<li class="hassubs">
+														<a href="#">Motherboard<i class="fas fa-chevron-right"></i></a>
+														<ul>
+															<li><a href="#">Asus<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Gigabyte<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Asrock<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Msi<i class="fas fa-chevron-right"></i></a></li>
+														</ul>
+													</li>
+													<li class="hassubs">
+														<a href="#">Keyboard<i class="fas fa-chevron-right"></i></a>
+														<ul>
+															<li><a href="#">Asus<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Gigabyte<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Razer<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Bloody<i class="fas fa-chevron-right"></i></a></li>
+														</ul>
+													</li>
+													<li class="hassubs">
+														<a href="#">Mouse<i class="fas fa-chevron-right"></i></a>
+														<ul>
+															<li><a href="#">Logitec<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">A4tech<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Razer<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Gigabyte<i class="fas fa-chevron-right"></i></a></li>
+														</ul>
+													</li>
+													<li><a href="#">SSD<i class="fas fa-chevron-right"></i></a></li>
+												</ul>
+											</li>
+											<li class="hassubs">
+												<a href="#">Software<i class="fas fa-chevron-right"></i></a>
+												<ul>
+													<li class="hassubs">
+														<a href="#">Windows<i class="fas fa-chevron-right"></i></a>
+														<ul>
+															<li><a href="#">Windows 10<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Windows 8<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Windows 7<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Windows 98<i class="fas fa-chevron-right"></i></a></li>
+														</ul>
+													</li>
+													<li class="hassubs">
+														<a href="#">Anti Virus<i class="fas fa-chevron-right"></i></a>
+														<ul>
+															<li><a href="#">Avast<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Kaspersky<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Norton<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Avira<i class="fas fa-chevron-right"></i></a></li>
+														</ul>
+													</li>
+													<li><a href="#">Microsoft Office 2019<i class="fas fa-chevron-right"></i></a></li>
+												</ul>
+											</li>
+											<li class="hassubs">
+												<a href="#">Watches<i class="fas fa-chevron-right"></i></a>
+												<ul>
+													<li class="hassubs">
+														<a href="#">For Men<i class="fas fa-chevron-right"></i></a>
+														<ul>
+															<li><a href="#">Audemars Piguet<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Vacheron Constantin<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Patek Philippe<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Rolex<i class="fas fa-chevron-right"></i></a></li>
+														</ul>
+													</li>
+													<li class="hassubs">
+														<a href="#">For Women<i class="fas fa-chevron-right"></i></a>
+														<ul>
+															<li><a href="#">Rolex<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Chanel<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Cartier<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Bell & Ross<i class="fas fa-chevron-right"></i></a></li>
+														</ul>
+													</li>
+													<li class="hassubs">
+														<a href="#">For Kids<i class="fas fa-chevron-right"></i></a>
+														<ul>
+															<li><a href="#">Fastrack<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Sonata<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Casio<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Titan<i class="fas fa-chevron-right"></i></a></li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li class="hassubs">
+												<a href="#">Mobile<i class="fas fa-chevron-right"></i></a>
+												<ul>
+													<li class="hassubs">
+														<a href="#">Samsung<i class="fas fa-chevron-right"></i></a>
+														<ul>
+															<li><a href="#">s10<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">s9<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">a51<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">m40<i class="fas fa-chevron-right"></i></a></li>
+														</ul>
+													</li>
+													<li class="hassubs">
+														<a href="#">Nokia<i class="fas fa-chevron-right"></i></a>
+														<ul>
+															<li><a href="#">6.1 plus<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">7.1 plus<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">9 (pure view)<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">x71<i class="fas fa-chevron-right"></i></a></li>
+														</ul>
+													</li>
+													<li class="hassubs">
+														<a href="#">Apple<i class="fas fa-chevron-right"></i></a>
+														<ul>
+															<li><a href="#">11 pro<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">X's Max<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">8 pro<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">X<i class="fas fa-chevron-right"></i></a></li>
+														</ul>
+													</li>
+													<li class="hassubs">
+														<a href="#">Xiaomi<i class="fas fa-chevron-right"></i></a>
+														<ul>
+															<li><a href="#">Note 9 Pro Max<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Note 9 Pro<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">8A Dual<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Mi 10 Pro<i class="fas fa-chevron-right"></i></a></li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li class="hassubs">
+												<a href="#">Sunglasses<i class="fas fa-chevron-right"></i></a>
+												<ul>
+													<li class="hassubs">
+														<a href="#">For Men<i class="fas fa-chevron-right"></i></a>
+														<ul>
+															<li><a href="#">Prada<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Versace<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Burberry<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Bulgari<i class="fas fa-chevron-right"></i></a></li>
+														</ul>
+													</li>
+													<li class="hassubs">
+														<a href="#">For Women<i class="fas fa-chevron-right"></i></a>
+														<ul>
+															<li><a href="#">Christian Dior<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">DKNY<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Dolce & Gabbana<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Gucci<i class="fas fa-chevron-right"></i></a></li>
+														</ul>
+													</li>
+													<li class="hassubs">
+														<a href="#">For Kids<i class="fas fa-chevron-right"></i></a>
+														<ul>
+															<li><a href="#">Dolce & Gabbana<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Ray-Ban's<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Gucci <i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Elle <i class="fas fa-chevron-right"></i></a></li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li class="hassubs">
+												<a href="#">Televisions<i class="fas fa-chevron-right"></i></a>
+												<ul>
+													<li class="hassubs">
+														<a href="#">Smart TV<i class="fas fa-chevron-right"></i></a>
+														<ul>
+															<li><a href="#">Samsung<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">VIZIO <i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">LG <i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Sony <i class="fas fa-chevron-right"></i></a></li>
+														</ul>
+													</li>
+													<li class="hassubs">
+														<a href="#">LED TV<i class="fas fa-chevron-right"></i></a>
+														<ul>
+															<li><a href="#">Sony<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">LG<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Panasonic<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Philips<i class="fas fa-chevron-right"></i></a></li>
+														</ul>
+													</li>
+													<li class="hassubs">
+														<a href="#">OLED TV<i class="fas fa-chevron-right"></i></a>
+														<ul>
+															<li><a href="#">LG CX<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Sony A8G<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Philips OLED805<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Sony Master Series<i class="fas fa-chevron-right"></i></a></li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li class="hassubs">
+												<a href="#">Health & Beauty<i class="fas fa-chevron-right"></i></a>
+												<ul>
+													<li class="hassubs">
+														<a href="#">Bath & Beauty<i class="fas fa-chevron-right"></i></a>
+														<ul>
+															<li><a href="#">Body & Massage Oil<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Body Moisturizer<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Body Scurbs<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Foot Care<i class="fas fa-chevron-right"></i></a></li>
+														</ul>
+													</li>
+													<li class="hassubs">
+														<a href="#">Hair & Care<i class="fas fa-chevron-right"></i></a>
+														<ul>
+															<li><a href="#">Shampoo<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Treatment<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Color<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Conditioner<i class="fas fa-chevron-right"></i></a></li>
+														</ul>
+													</li>
+													<li class="hassubs">
+														<a href="#">Makeup<i class="fas fa-chevron-right"></i></a>
+														<ul>
+															<li><a href="#">Face<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Lips<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Eyes<i class="fas fa-chevron-right"></i></a></li>
+															<li><a href="#">Nails<i class="fas fa-chevron-right"></i></a></li>
+														</ul>
+													</li>
+													<li><a href="#">Medical Support<i class="fas fa-chevron-right"></i></a></li>
+												</ul>
+											</li>
+											<li class="hassubs">
+												<a href="#">Men's Fashion<i class="fas fa-chevron-right"></i></a>
+												<ul>
+													<li><a href="#">T-shirts<i class="fas fa-chevron-right"></i></a></li>
+													<li><a href="#">Formal Shirts<i class="fas fa-chevron-right"></i></a></li>
+													<li><a href="#">Panjabi<i class="fas fa-chevron-right"></i></a></li>
+													<li><a href="#">Pants<i class="fas fa-chevron-right"></i></a></li>
+													<li><a href="#">Shoes<i class="fas fa-chevron-right"></i></a></li>
+													<li><a href="#">Jeans<i class="fas fa-chevron-right"></i></a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+									<!-- Main Nav Menu -->
+									<div class="main_nav_menu ml-auto">
+										<ul class="standard_dropdown main_nav_dropdown">
+											<li><a href="index.html">Home<i class="fas fa-chevron-down"></i></a></li>
+											<li class="hassubs">
+												<a href="#">Super Deals<i class="fas fa-chevron-down"></i></a>
+												<ul>
+													<li>
+														<a href="#">Menu Item<i class="fas fa-chevron-down"></i></a>
+														<ul>
+															<li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+															<li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+															<li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+														</ul>
+													</li>
+													<li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+													<li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+													<li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+												</ul>
+											</li>
+											<li class="hassubs">
+												<a href="#">Featured Brands<i class="fas fa-chevron-down"></i></a>
+												<ul>
+													<li>
+														<a href="#">Menu Item<i class="fas fa-chevron-down"></i></a>
+														<ul>
+															<li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+															<li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+															<li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+														</ul>
+													</li>
+													<li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+													<li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+													<li><a href="#">Menu Item<i class="fas fa-chevron-down"></i></a></li>
+												</ul>
+											</li>
+											<li class="hassubs">
+												<a href="#">Pages<i class="fas fa-chevron-down"></i></a>
+												<ul>
+													<li><a href="shop.html">Shop<i class="fas fa-chevron-down"></i></a></li>
+													<li><a href="product.html">Product<i class="fas fa-chevron-down"></i></a></li>
+													<li><a href="blog.html">Blog<i class="fas fa-chevron-down"></i></a></li>
+													<li><a href="blog_single.html">Blog Post<i class="fas fa-chevron-down"></i></a></li>
+													<li><a href="regular.html">Regular Post<i class="fas fa-chevron-down"></i></a></li>
+													<li><a href="cart.html">Cart<i class="fas fa-chevron-down"></i></a></li>
+													<li><a href="contact.html">Contact<i class="fas fa-chevron-down"></i></a></li>
+												</ul>
+											</li>
+											<li><a href="blog.html">Blog<i class="fas fa-chevron-down"></i></a></li>
+											<li><a href="contact.html">Contact<i class="fas fa-chevron-down"></i></a></li>
+										</ul>
+									</div>
+									<!-- Menu Trigger -->
+									<div class="menu_trigger_container ml-auto">
+										<div class="menu_trigger d-flex flex-row align-items-center justify-content-end">
+											<div class="menu_burger">
+												<div class="menu_trigger_text">menu</div>
+												<div class="cat_burger menu_burger_inner"><span></span><span></span><span></span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr class="new" >
+				</nav>
+				<!-- Menu -->
+			</header>
+			<div class="viewed">
+				<main class="py-4">
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-md-8">
+								<div class="card">
+									<div class="card-header" style="text-align: center;">
+										<h3>
+										<b>
+										Reset Password
+										</b>
+										</h3>
+									</div>
+									<div class="card-body">
+										<form method="POST" action="">
+											<input type="hidden" name="_token" value="tqZ41Gblt1yGVpymzYJAiTyvWWLri6rSwFxjZ8cg">
+											<div class="form-group row">
+												<label for="email" class="col-md-4 col-form-label text-md-right">
+													E-Mail Address
+												</label>
+												<div class="col-md-6">
+													<input id="email" type="email" name="email" value="" required="required" autocomplete="email" autofocus="autofocus" class="form-control ">
+												</div>
+											</div>
+											<div class="form-group row mb-0">
+												<div class="col-md-6 offset-md-4">
+													<button type="submit" class="btn btn-primary">
+													Send Password Reset Link
+													</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 footer_col">
+						<div class="footer_column footer_contact">
+							<div class="logo_container">
+								<div class="logo"><a href="#">OneTech</a></div>
+							</div>
+							<div class="footer_title">Got Question? Call Us 24/7</div>
+							<div class="footer_phone">+38 068 005 3570</div>
+							<div class="footer_contact_text">
+								<p>17 Princess Road, London</p>
+								<p>Grester London NW18JR, UK</p>
+							</div>
+							<div class="footer_social">
+								<ul>
+									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+									<li><a href="#"><i class="fab fa-google"></i></a></li>
+									<li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 offset-lg-2">
+						<div class="footer_column">
+							<div class="footer_title">Find it Fast</div>
+							<ul class="footer_list">
+								<li><a href="#">Computers & Laptops</a></li>
+								<li><a href="#">Cameras & Photos</a></li>
+								<li><a href="#">Hardware</a></li>
+								<li><a href="#">Smartphones & Tablets</a></li>
+								<li><a href="#">TV & Audio</a></li>
+							</ul>
+							<div class="footer_subtitle">Gadgets</div>
+							<ul class="footer_list">
+								<li><a href="#">Car Electronics</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<div class="footer_column">
+							<ul class="footer_list footer_list_2">
+								<li><a href="#">Video Games & Consoles</a></li>
+								<li><a href="#">Accessories</a></li>
+								<li><a href="#">Cameras & Photos</a></li>
+								<li><a href="#">Hardware</a></li>
+								<li><a href="#">Computers & Laptops</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<div class="footer_column">
+							<div class="footer_title">Customer Care</div>
+							<ul class="footer_list">
+								<li><a href="#">My Account</a></li>
+								<li><a href="#">Order Tracking</a></li>
+								<li><a href="#">Wish List</a></li>
+								<li><a href="#">Customer Services</a></li>
+								<li><a href="#">Returns / Exchange</a></li>
+								<li><a href="#">FAQs</a></li>
+								<li><a href="#">Product Support</a></li>
+								<li><a href="terms&conditions.html">Terms & Conditions</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Copyright -->
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						
+						<div class="copyright_container d-flex flex-sm-row flex-column align-items-center justify-content-start">
+							<div class="copyright_content"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						</div>
+						<div class="logos ml-sm-auto">
+							<ul class="logos_list">
+								<li><a href="#"><img src="images/logos_1.png" alt=""></a></li>
+								<li><a href="#"><img src="images/logos_2.png" alt=""></a></li>
+								<li><a href="#"><img src="images/logos_3.png" alt=""></a></li>
+								<li><a href="#"><img src="images/logos_4.png" alt=""></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+window.onscroll = function() {myFunction()};
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+function myFunction() {
+if (window.pageYOffset >= sticky) {
+navbar.classList.add("sticky")
+} else {
+navbar.classList.remove("sticky");
+}
+}
+</script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/slick-1.8.0/slick.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
